@@ -1,0 +1,17 @@
+.prof_body{
+    font-family: 'Montserrat',sans-serif;
+    background: rgb(212, 202, 112);
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  
+.profile-button {
+    box-shadow: none;
+    border: none;
+}
+  
+.border{
+  border-width: 10px;
+  border-color: black;
+}

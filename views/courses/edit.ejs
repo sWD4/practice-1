@@ -1,0 +1,68 @@
+<%- include('../header.ejs')%>
+<br><br><br><br><br>
+<h1>Edit Page</h1>
+
+<div class="container">
+    <form method="post" action="/course_update/<%= d.id %>">
+        <div class="mb-3">
+          <label>Name:</label><br>
+          <input type="text" name="name" type="form-control" class="w-100" value="<%= d.name %>"/>
+        </div>
+
+        <div class="mb-3">
+          <label>Email:</label><br>
+          <input type="email" name="email" type="form-control" class="w-100" value="<%= d.email %>"/>
+        </div>
+
+        <div class="mb-3">
+          <label>Mobile No.:</label><br>
+          <input type="number" name="mobile" type="form-control" class="w-100" value="<%= d.mobile %>"/>
+        </div>
+
+        <div class="mb-3">
+          <label>Address:</label><br>
+          <textarea type="form-control" name="address" type="text" class="w-100"><%= d.address %></textarea>
+        </div>
+
+        <div class="mb-3">
+            <!-- <%= d.gender=='male'?'checked':'' %>  for radio options-->
+          <label>Gender:</label><br>
+          <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label>Qualification:</label><br>
+          <select name="qualification">
+            <option <%= d.qualification =='12th'?'selected':'' %>>12th</option>
+            <option <%= d.qualification =='Diploma'?'selected':'' %>>Diploma</option>
+            <option <%= d.qualification =='BCA'?'selected':'' %>>BCA</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label>Course:</label><br>
+          <input type="text" placeholder="B. Tech" name="course" value="btech" type="form-control" readonly class="w-100">
+        </div>
+
+    
+    </div>
+
+
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-dismiss="modal"
+      >
+        Close
+      </button>
+      <button type="submit" name="submit" value="submit" class="btn btn-primary">Save changes</button>
+    </div>
+  </form>
+</div>
+<%- include('../footer.ejs')%>
+</body>
+</html>
