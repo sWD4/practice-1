@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
-    <link rel="stylesheet" href="dash.css" />
-  </head>
-  <body>
-    <section class="about-us">
-      <div class="about">
-        <img src="image/mits.jpg" class="pic" />
-        <div class="text">
-          <h2>About Us</h2>
-          <h5>Front-end Developer & <span>Designer</span></h5>
-          <p>
-            Madhav Engineering College was established in 1957 by Maharaja
-            Jivajirao Scindia. The foundation stone of the institute was laid by
-            Dr. Rajendra Prasad, the former President of India, on 20 October
-            1956. The building was inaugurated on 11 December 1964 by Dr. S.
-            Radhakrishnan, the former President of India.[2] The institute
-            started with Bachelor of Engineering courses in civil, mechanical
-            and electrical engineering. Postgraduate and Ph.D. courses in
-            applied sciences were introduced in 1967. Undergraduate courses in
-            electronics engineering and architecture were started in 1981 and
-            1984 respectively. The institute started a postgraduate course in
-            Computer Application in 1986. The institute offered a postgraduate
-            course in civil engineering with specialization in construction
-            technology and management in 1987. Postgraduate degrees in
-            electronics and electrical engineering were started in 1995. A
-            Bachelor of Engineering in computer science and engineering and
-            chemical engineering were offered from 1994 and 1995 respectively.
-            An information technology course was started in 2000.
-          </p>
-          <div class="data">
-            <a href="#" class="hire">Hire Me</a>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>Send us a Message</header>
+    <form action="#">
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="name" placeholder="Enter your name">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Enter your email">
+          <i class='fas fa-envelope'></i>
         </div>
       </div>
-    </section>
-  </body>
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="phone" placeholder="Enter your phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="website" placeholder="Enter your website">
+          <i class='fas fa-globe'></i>
+        </div>
+      </div>
+      <div class="message">
+        <textarea placeholder="Write your message" name="message"></textarea>
+        <i class="material-icons">message</i>
+      </div>
+      <div class="button-area">
+        <button type="submit">Send Message</button>
+        <span></span>
+      </div>
+    </form>
+  </div>
+
+</body>
 </html>

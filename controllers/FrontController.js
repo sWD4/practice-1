@@ -167,7 +167,7 @@ class FrontController {
     try {
       const { name, email, _id, image ,mobile } = req.user;
       const data = await UserModel.find()
-      res.render('about',{n:name,image:image,id:_id,e:email,m:mobile,d:data});
+      res.render('aboutus',{n:name,image:image,id:_id,e:email,m:mobile,d:data});
     } catch (error) {
       console.log(error);
     }
