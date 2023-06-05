@@ -83,6 +83,32 @@ border-color: black;
     overflow: hidden;
 }
 
+.img{
+  width: 45%;
+}
+
+.para3{
+  color: rgb(228, 227, 227);
+  font-family: sans-serif;
+  line-height: 26px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.footer{
+  padding: 20px 20px;
+}
+
+.bold_i{
+  font-weight: bold;
+  color: white;;
+  font-size: 35px;
+  /* padding: 0px 10px; */
+  padding-right: 10px;
+}
+
+
 .img_h{
     height: 200px;
     width: 100%;
@@ -102,7 +128,7 @@ border-color: black;
 
 .head2{
   font-size: 50px;
-  margin-top: 145px;
+ 
   font-family: 'Poppins',sans-serif;
   text-align: center;
   color: #386576;
@@ -151,26 +177,22 @@ a.button2:hover{
     text-decoration: none;
 }
 
+.bold{
+  font-weight: bold;
+  color: #fbaa1a;
+}
+
 .footer{
+  padding-top: 60px;
     background-color: #887434eb;
     color: white;
 }
 
 
-.bold_i{
-    background-color: #573201eb;
-    font-weight: bold;
-    color: white;
-    font-size: 35px;
-    padding: 15px 90px;
-    border-radius: 10px;
-}
-
-.last_footer{
-    background-color: #887434eb;
-    color: aliceblue;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 20px;
+.lastfooter{
+  background: black;
+  width: 100%;
+  padding: 10px 0px;
 }
 
 .inherit{
@@ -188,3 +210,9 @@ a.button2:hover{
     text-align: center;
   }
 }
+
+
+
+
+
+
