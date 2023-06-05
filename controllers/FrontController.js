@@ -163,6 +163,26 @@ class FrontController {
     }
   };
 
+  static aboutus = async (req, res) => {
+    try {
+      const { name, email, _id, image ,mobile } = req.user;
+      const data = await UserModel.find()
+      res.render('about',{n:name,image:image,id:_id,e:email,m:mobile,d:data});
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+  static contact = async (req, res) => {
+    try {
+      const { name, email, _id, image ,mobile } = req.user;
+      const data = await UserModel.find()
+      res.render('contact',{n:name,image:image,id:_id,e:email,m:mobile,d:data});
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   static change_password = async (req, res) => { 
     try {
       const { name, email, id, image } = req.user;

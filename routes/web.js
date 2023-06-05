@@ -16,6 +16,8 @@ router.get('/logout',FrontController.logout)
 router.get('/profile',checkuserauth,FrontController.profile)
 router.post('/change_password',checkuserauth,FrontController.change_password)
 router.post('/profile_update',checkuserauth,FrontController.profile_update)
+router.get('/aboutus',checkuserauth,FrontController.aboutus)
+router.get('/contact',checkuserauth,FrontController.contact)
 
 //coursecontroller
 router.post('/course_insert',checkuserauth,CourseController.course_insert);
