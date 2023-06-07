@@ -108,6 +108,13 @@ border-color: black;
   padding-right: 10px;
 }
 
+.drop{
+  color:white;
+  background: rgb(204 204 204);
+  border:none;
+  margin: 0px 15px;
+}
+
 
 .img_h{
     height: 200px;
