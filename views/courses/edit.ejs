@@ -1,6 +1,5 @@
 <%- include('../header.ejs')%>
-<br><br><br><br><br>
-<h1>Edit Page</h1>
+<br><br><br>
 
 <div class="container">
     <form method="post" action="/course_update/<%= d.id %>">
@@ -52,16 +51,11 @@
 
 
     <div class="modal-footer">
-      <button
-        type="button"
-        class="btn btn-secondary"
-        data-bs-dismiss="modal"
-      >
-        Close
-      </button>
+
       <button type="submit" name="submit" value="submit" class="btn btn-primary">Save changes</button>
     </div>
   </form>
+  <br><br>
 </div>
 <%- include('../footer.ejs')%>
 </body>

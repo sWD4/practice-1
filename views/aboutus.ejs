@@ -1,100 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admission Portal</title>
-
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-
-    <!--EXTERNAL CSS LINK-->
-    <link href="/css/dash.css" rel="stylesheet" />
-
-    <!--FONT AWESOME LINK-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md ">
-      <div class="container-fluid">
-        <a href="" class="navbar-brand">
-          <img src="/image/logo.png" class="weblogo" />
-        </a>
-        <!--mobile view-->
-        <button
-          class="navbar-toggler"
-          data-bs-target="#a"
-          data-bs-toggle="collapse"y
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--mobile view end-->
-
-        <!--menu-->
-        <div class="navbar-collapse collapse" id="a">
-          <ul class="navbar-nav ms-auto">
-            <li><a href="/dashboard" class="nav-link">Home</a></li>
-            <li><a href="/aboutus" class="nav-link">About</a></li>
-            <li><a href="/contact" class="nav-link">Contact</a></li>
-            <li><a href="/logout" class="nav-link">Logout</a></li>
-            <li><a href="#" class="nav-link"><%= n %></a></li>
-            <li><a href="/profile" class="nav-link">Edit Profile</a></li>
-          </ul>
-          <img src="<%= image.url%>" width="100px" height="100px" style="border-radius: 50px;">
+<%- include('header.ejs')%>
+    <div class="container aboutus">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="image/mits.jpg" class="pic shadow" />
         </div>
-        <!--menu end-->
-      </div>
-      <!--container-fluid end-->
-    </nav>
-    <!--nav end-->
-
-    <section class="about-us">
-      <div class="about">
-        <img src="image/mits.jpg" class="pic" />
-        <div class="text">
-          <h2>About Us</h2>
-          <h5>MITS</h5>
-          <p>
-            Madhav Engineering College was established in 1957 by Maharaja
-            Jivajirao Scindia. The foundation stone of the institute was laid by
-            Dr. Rajendra Prasad, the former President of India, on 20 October
-            1956. The building was inaugurated on 11 December 1964 by Dr. S.
-            Radhakrishnan, the former President of India.[2] The institute
-            started with Bachelor of Engineering courses in civil, mechanical
-            and electrical engineering. Postgraduate and Ph.D. courses in
-            applied sciences were introduced in 1967. Undergraduate courses in
-            electronics engineering and architecture were started in 1981 and
-            1984 respectively. The institute started a postgraduate course in
-            Computer Application in 1986. The institute offered a postgraduate
-            course in civil engineering with specialization in construction
-            technology and management in 1987. Postgraduate degrees in
-            electronics and electrical engineering were started in 1995. A
-            Bachelor of Engineering in computer science and engineering and
-            chemical engineering were offered from 1994 and 1995 respectively.
-            An information technology course was started in 2000.
-          </p>
-          <div class="data">
-            <a href="#" class="hire">Hire Me</a>
+        <div class="col-md-6 ">
+          <div class="text">
+            <h2>About Us</h2>
+            <p style="text-align: justify;">
+              Madhav Engineering College was established in 1957 by Maharaja
+              Jivajirao Scindia. The foundation stone of the institute was laid
+              by Dr. Rajendra Prasad, the former President of India, on 20
+              October 1956. The building was inaugurated on 11 December 1964 by
+              Dr. S. Radhakrishnan, the former President of India.The
+              institute started with Bachelor of Engineering courses in civil,
+              mechanical and electrical engineering. Postgraduate and Ph.D.
+              courses in applied sciences were introduced in 1967. Undergraduate
+              courses in electronics engineering and architecture were started
+              in 1981 and 1984 respectively. A Bachelor of Engineering in computer
+              science and engineering and chemical engineering were offered from
+              1994 and 1995 respectively. An information technology course was
+              started in 2000.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <%- include('footer.ejs')%>
+  </body>
+</html>

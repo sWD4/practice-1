@@ -21,7 +21,7 @@
     ></script>
 
     <!--EXTERNAL CSS LINK-->
-    <link href="/css/dash.css" rel="stylesheet" />
+    <link href="/css/contact.css" rel="stylesheet" />
 
     <!--FONT AWESOME LINK-->
     <link
@@ -33,7 +33,7 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md ">
+    <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a href="" class="navbar-brand">
           <img src="/image/logo.png" class="weblogo" />
@@ -42,7 +42,8 @@
         <button
           class="navbar-toggler"
           data-bs-target="#a"
-          data-bs-toggle="collapse"y
+          data-bs-toggle="collapse"
+          y
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,19 +55,38 @@
             <li><a href="/dashboard" class="nav-link">Home</a></li>
             <li><a href="/aboutus" class="nav-link">About</a></li>
             <li><a href="/contact" class="nav-link">Contact</a></li>
-            <li><a href="/logout" class="nav-link">Logout</a></li>
-            <li><a href="#" class="nav-link"><%= n %></a></li>
-            <li><a href="/profile" class="nav-link">Edit Profile</a></li>
+            <div class="dropdown">
+              <button
+                class="nav-link drop"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <%= n %>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active drop_down" href="/profile">Edit Profile</a></li>
+                <li><a class="dropdown-item active drop_down " href="/logout">Logout</a></li>
+              </ul>
+            </div>
           </ul>
-          <img src="<%= image.url%>" width="100px" height="100px" style="border-radius: 50px;">
+          <img
+            src="<%= image.url%>"
+            width="100px"
+            height="100px"
+            style="border-radius: 50px"
+          />
         </div>
         <!--menu end-->
       </div>
       <!--container-fluid end-->
     </nav>
     <!--nav end-->
+  </body>
+</html>
 
-  <div class="wrapper">
+<div class="cover">
+  <div class="wrapper text-center">
     <header>Send us a Message</header>
     <form action="#">
       <div class="dbl-field">
@@ -94,7 +114,8 @@
         <button type="submit">Send Message</button>
         <span></span>
       </div>
+      <br>
     </form>
   </div>
-
+</div>
   <%- include('footer.ejs')%>

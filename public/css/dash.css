@@ -88,7 +88,7 @@ border-color: black;
 }
 
 .para3{
-  color: rgb(228, 227, 227);
+  color: #00000033;
   font-family: sans-serif;
   line-height: 26px;
   text-align: justify;
@@ -102,17 +102,48 @@ border-color: black;
 
 .bold_i{
   font-weight: bold;
-  color: white;;
+  color: #386576;;
   font-size: 35px;
   /* padding: 0px 10px; */
   padding-right: 10px;
 }
+.pic {
+  height: auto;
+  width: 400px;
+  border-radius: 12px;
+  margin-top: 30px;
+  border-color: black;
+  border: 2px;
+}
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  color: #333;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
 
 .drop{
   color:white;
-  background: rgb(204 204 204);
+  background: rgba(204, 204, 204, 0);
   border:none;
   margin: 0px 15px;
+}
+.drop_down{
+  color:black;
+  background: white;
+  border:none;
 }
 
 
@@ -141,9 +172,10 @@ border-color: black;
   color: #386576;
 }
 
-.para2{
-  color: #386576;;
+.para3{
+  color: #386576;
 }
+
 
 .para{
     font-size: 20px;
@@ -186,20 +218,13 @@ a.button2:hover{
 
 .bold{
   font-weight: bold;
-  color: #fbaa1a;
+  color: #000000;
 }
 
 .footer{
   padding-top: 60px;
-    background-color: #887434eb;
+    background-color: #00000033;
     color: white;
-}
-
-
-.lastfooter{
-  background: black;
-  width: 100%;
-  padding: 10px 0px;
 }
 
 .inherit{
