@@ -6,7 +6,7 @@ body{
   /*NAV BAR CSS */
 
 .weblogo {
-    width: 80px;
+    width: 149px;
   }
   .navbar-nav li{
     padding: 0 10px;
@@ -108,7 +108,7 @@ border-color: black;
   padding-right: 10px;
 }
 .pic {
-  height: auto;
+  height: 400px;
   width: 400px;
   border-radius: 12px;
   margin-top: 30px;
@@ -145,6 +145,7 @@ border-color: black;
   background: white;
   border:none;
 }
+
 
 
 .img_h{
