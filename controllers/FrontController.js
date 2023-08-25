@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const cloudinary = require("cloudinary").v2;
 const jwt = require("jsonwebtoken");
 const CourseModel = require("../models/Course");
-const nodemailer =require('nodemailer');
+const nodemailer = require('nodemailer');
 
 cloudinary.config({
   cloud_name: "dkopmzxkx",
@@ -263,14 +263,14 @@ class FrontController {
     port: 587,
 
     auth: {
-      user: "sujaljha007@gmail.com",
-      pass: "uqltlwovtuaovloc",
+      user: "sshubham2405@gmail.com",
+      pass: "ouzruhsesecjvnch",
     },
   });
   let info = await transporter.sendMail({
     from: "test@gmail.com", // sender address
     to: email, // list of receivers
-    subject: "Create course Registration Succesfully", // Subject line
+    subject: "Create  Registration Succesfully", // Subject line
     text: "hello", // plain text body
     html: `<b>${name}</b> Registration is successful! please login.. `, // html body
   });
