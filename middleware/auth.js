@@ -11,7 +11,7 @@ const checkuserauth = async(req,res,next) =>{
         res.redirect('/');
        
     } else {
-        const verify = jwt.verify(token,'secretkey123#btech@mits$6')
+        const verify = jwt.verify(token,"secretkey123#btech@mits$6")
         // console.log(verify)
         const user = await UserModel.findById(verify.ID)
             // console.log(user)

@@ -277,6 +277,7 @@ class FrontController {
   //console.log("Messge sent: %s", info.messageId);
 };
 
+
 }
 
 module.exports = FrontController;
