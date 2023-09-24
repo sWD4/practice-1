@@ -36,7 +36,10 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a href="" class="navbar-brand">
-          <img src="https://applecommunityitmtech.files.wordpress.com/2016/11/itm-university-logo-1.png?w=640"  class="weblogo2" />
+          <img
+            src="https://applecommunityitmtech.files.wordpress.com/2016/11/itm-university-logo-1.png?w=640"
+            class="weblogo2"
+          />
         </a>
         <!--mobile view-->
         <button
@@ -65,8 +68,16 @@
                 <%= n%>
               </button>
               <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item active drop_down" href="/profile">Edit Profile</a></li>
-                <li><a class="dropdown-item active drop_down " href="/logout">Logout</a></li>
+                <li>
+                  <a class="dropdown-item active drop_down" href="/profile"
+                    >Edit Profile</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active drop_down" href="/logout"
+                    >Logout</a
+                  >
+                </li>
               </ul>
             </div>
           </ul>
@@ -85,38 +96,35 @@
   </body>
 </html>
 
-
 <div class="cover">
   <div class="wrapper text-center">
     <header>Send us a Message</header>
     <form action="#">
       <div class="dbl-field">
         <div class="field">
-          <input type="text" name="name" placeholder="Enter your name">
-          <i class='fas fa-user'></i>
+          <input type="text" name="name" placeholder="Enter your name" />
+          <i class="fas fa-user"></i>
         </div>
         <div class="field">
-          <input type="text" name="email" placeholder="Enter your email">
-          <i class='fas fa-envelope'></i>
+          <input type="text" name="email" placeholder="Enter your email" />
+          <i class="fas fa-envelope"></i>
         </div>
       </div>
       <div class="dbl-field">
         <div class="field">
-          <input type="text" name="phone" placeholder="Enter your phone">
-          <i class='fas fa-phone-alt'></i>
+          <input type="text" name="phone" placeholder="Enter your phone" />
+          <i class="fas fa-phone-alt"></i>
         </div>
-
-</div>
+      </div>
       <div class="message">
-        <textarea placeholder="Write your message" name="message" 
-        ></textarea>
+        <textarea placeholder="Write your message" name="message"></textarea>
       </div>
       <div class="button-area">
         <button type="submit">Send Message</button>
         <span></span>
       </div>
-      <br>
+      <br />
     </form>
   </div>
 </div>
-  <%- include('footer.ejs')%>
+<%- include('footer.ejs')%>
