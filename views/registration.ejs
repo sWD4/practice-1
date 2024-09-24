@@ -57,7 +57,11 @@
         <div class="row g-0 shadow">
           <div class="col-md-5">
             <div class="pixel">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp" alt="" class="w-100" />
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                alt=""
+                class="w-100"
+              />
             </div>
           </div>
           <div class="col-md-7 text-center">
@@ -65,12 +69,21 @@
               <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                  <img src="https://play-lh.googleusercontent.com/Lx2xCanj5xXdq3060dPgUnGINDJwI_vqQGvBkrLB3pzuXSHNPWGOJY784O3f06U8Vnc2" alt="ITM_logo" class="w-100" />
+                  <img
+                    src="https://play-lh.googleusercontent.com/Lx2xCanj5xXdq3060dPgUnGINDJwI_vqQGvBkrLB3pzuXSHNPWGOJY784O3f06U8Vnc2"
+                    alt="ITM_logo"
+                    class="w-100"
+                  />
                 </div>
                 <div class="col-sm-4"></div>
               </div>
               <h5 class="text-center head1 mb-3 pb-3">User Login</h5>
-              <form action="/insert" enctype="multipart/form-data" method="post" class="pt-4">
+              <form
+                action="/insert"
+                enctype="multipart/form-data"
+                method="post"
+                class="pt-4"
+              >
                 <% if(message.length > 0){ %>
                 <div class="alert alert-danger"><%= message %></div>
                 <% } %>
@@ -104,14 +117,13 @@
                     name="cpassword"
                     class="form-control form-control-lg"
                     placeholder="Confirm Password"
-                  /><br>
+                  /><br />
                 </div>
                 <div class="form-group mb-4">
                   <input
                     type="file"
                     name="image"
                     class="form-control form-control-lg"
-            
                   />
                 </div>
                 <br />
